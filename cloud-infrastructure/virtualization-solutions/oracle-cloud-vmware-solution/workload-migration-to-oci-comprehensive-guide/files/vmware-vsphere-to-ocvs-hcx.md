@@ -186,7 +186,7 @@ While VM-level migration tools like HCX can handle the majority of workloads, th
 - Continuous write activity (transaction-heavy workloads).
 - The requirement for zero or near-zero downtime.
 
-To migrate such mission critical workloads and DB's you might consider dedicated solutions and architectures:
+To migrate such mission critical workloads and RDBMS environments you might consider dedicated solutions and architectures:
 
 - **Oracle Databases** – Use Oracle Data Guard or GoldenGate for robust replication, synchronization, and failover capabilities.
 - **PostgreSQL/MySQL** – Use native replication or database-specific migration tools.
@@ -197,7 +197,7 @@ By combining VM-level mobility with application-aware replication, enterprises c
 
 ## Best Practices & Guidance
 
-To ensure a smooth and resilient transition to OCI Native Compute Instances, the following best practices should be incorporated into any migration strategy:
+To ensure a smooth and resilient transition to a new OCVS-based infrastucture, the following best practices should be incorporated into any migration strategy:
 
 - **Adopt a phased migration approach** – Start with lower-priority or non-production workloads to validate tooling, processes, and network designs. Use early phases as learning cycles before addressing mission-critical systems.
 
