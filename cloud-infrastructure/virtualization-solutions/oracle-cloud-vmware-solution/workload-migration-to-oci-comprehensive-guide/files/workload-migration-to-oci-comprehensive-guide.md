@@ -40,9 +40,9 @@ This document outlines the principal migration paths for transitioning workloads
 
 - **VMware vSphere → OCI Native Compute Instances:** In this scenario, VMware VMs are replatformed into OCI Native Compute. The process involves converting VM formats, adapting networking and storage, and integrating with OCI services. Migration tooling includes Oracle Cloud Migrations (OCM), RackWare, or custom image imports to perform discovery, replication, and deployment.
 
-- **Microsoft Hyper-V / KVM → OCI Native Compute Instances:** Migration from Hyper-V or KVM requires VM format conversion and deployment into OCI’s compute environment. This path suits organizations aiming to modernize workloads or consolidate platforms. Tools such as RackWare or HCX Enterprise with OSAM support automated discovery, dependency mapping, and migration wave planning.
+- **Microsoft Hyper-V / KVM → OCI Native Compute Instances:** Migration from Hyper-V or KVM requires VM format conversion and deployment into OCI’s compute environment. This path suits organizations aiming to modernize workloads or consolidate platforms. Tools such as RackWare support automated discovery, dependency mapping, and migration wave planning.
 
-- **Microsoft Hyper-V / KVM → Oracle Cloud VMware Solution (OCVS):** Although less common, this option consolidates workloads under a single VMware SDDC on OCI for standardization. It requires cross-hypervisor conversion tools to preserve VM configuration attributes and migrate workloads reliably.
+- **Microsoft Hyper-V / KVM → Oracle Cloud VMware Solution (OCVS):** Although less common, this option consolidates workloads under a single VMware SDDC on OCI for standardization. It requires cross-hypervisor conversion tools to preserve VM configuration attributes and migrate workloads reliably. Tools such as VMware HCX OSAM or Rackware can be used to migrate such workloads.
 
 - **Physical x86 Servers → OCI Native or OCVS:** Bare-metal workloads can be migrated directly to OCI, either as OCI Native Compute Instances or as VMs in OCVS. This path is often chosen for legacy applications or workloads running on physical infrastructure that require modernization or consolidation. Migration tools such as RackWare provide OS-level replication and transformation for smooth cutover.
 
