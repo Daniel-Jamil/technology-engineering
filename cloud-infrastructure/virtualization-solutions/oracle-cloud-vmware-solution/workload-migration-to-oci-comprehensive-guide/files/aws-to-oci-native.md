@@ -23,7 +23,7 @@ Oracle Cloud Infrastructure (OCI) is a global cloud services platform offering a
 
 ### Oracle Cloud Migrations (OCM) (Recommended)
 
-Oracle Cloud Migrations is a managed service that automates the migration of workloads—specifically AWS EC2 instances—to Oracle Cloud Infrastructure (OCI). It streamlines every step of the process—from discovery and planning to replication and deployment—using OCI Console, CLI, or API interface.
+Oracle Cloud Migrations is a free, self-service OCI native tool that automates the migration of workloads—specifically AWS EC2 instances—to Oracle Cloud Infrastructure (OCI). It streamlines every step of the process—from discovery and planning to replication and deployment—using OCI Console, CLI, or API interface.
 
 **Key Capabilities:**
 
