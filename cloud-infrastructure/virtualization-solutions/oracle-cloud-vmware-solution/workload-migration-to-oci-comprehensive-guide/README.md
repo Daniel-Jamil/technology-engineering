@@ -49,8 +49,9 @@ Decision Logic by Source Platform.
 
 | Source Environment                     | Target Platform              | Migration Tooling                         | Migration Guide            |
 |----------------------------------------|------------------------------|-------------------------------------------|----------------------------|
-| AWS EC2 / VMs                          | OCI Native Compute Instances | Oracle Cloud Migrations (OCM) / RackWare  | AWS to OCI Native          |
-| Other Public Clouds (Azure, GCP, etc.) | OCI Native Compute Instances | RackWare                                  | Other Clouds to OCI Native |
+| AWS EC2 / VMs                          | OCI Native Compute Instances | Oracle Cloud Migrations (OCM) / RackWare  | [AWS to OCI Native](./files/aws-to-oci-native.md)         |
+| Other Public Clouds (Azure, GCP, etc.) | OCI Native Compute Instances | RackWare                                  | [Other Clouds to OCI Native]|(./files/other-clouds-to-oci-native.md)
+|
 
 **Public Cloud Instances Migration to OCI**
 
