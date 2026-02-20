@@ -88,7 +88,7 @@ This diagram focuses on the transition of containerized and hybrid workloads spe
 | Kubernetes (on-prem or self-managed)        | OpenShift Container Platform on OCI      | Container Redeployment (CI/CD, Helm, GitOps)      | [Kubernetes to OpenShift on OCI (Redeploy)](./files/k8s-openshift-on-oci-redeploy.md)                 |
 | Red Hat OpenShift (on-prem or self-managed) | OpenShift Container Platform on OCI      | Migration Toolkit for Containers (MTC)            | [OpenShift to OpenShift on OCI using MTC](./files/openshift-openshif-on-oci-using-mtc.md)                   |
 | Mixed VM-based + Containerized Workloads    | OpenShift Virtualization on OCI          | Containers: Redeploy or MTC<br>VMs: MTV           | [Mixed VM + Container to OpenShift Virtualization](./files/mixed-workloads-openshift-virtualization-on-oci-using-mtv.md)
-|
+
 
 
 # When to use this asset?
