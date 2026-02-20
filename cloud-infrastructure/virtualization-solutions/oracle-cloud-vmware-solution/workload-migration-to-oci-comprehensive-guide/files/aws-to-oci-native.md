@@ -6,7 +6,7 @@ This guide covers migrating workloads from Amazon Web Services (AWS) EC2 instanc
 
 ## Introduction
 
-Oracle Cloud Infrastructure (OCI) is a global cloud services platform offering a comprehensive portfolio of IaaS, PaaS, SaaS, and DaaS capabilities across distributed datacenters. OCI Native Compute Instances are designed for replatformed or cloud-native workloads, offering secure, elastic, and high-performance virtual machines provisioned directly within OCI. Migrating from AWS to OCI enables organizations to leverage OCI's low cost and flexible pricing, high-performance infrastructure, and an unique off-box virtualization security model.
+Oracle Cloud Infrastructure (OCI) is a global cloud services platform offering a comprehensive portfolio of IaaS, PaaS, SaaS, and DaaS capabilities across distributed datacenters. OCI Native Compute Instances are designed for replatformed or cloud-native workloads, offering secure, elastic, and high-performance virtual machines provisioned directly within OCI. Migrating from AWS to OCI enables organizations to leverage OCI's low cost and flexible pricing, high-performance infrastructure, and a unique off-box virtualization security model.
 
 ## Target Platform: OCI Native Compute Instances
 
@@ -125,7 +125,7 @@ While VM-level migration tools (e.g., OCM, RackWare) can handle the majority of 
 - Continuous write activity (transaction-heavy workloads).
 - The requirement for zero or near-zero downtime.
 
-To migrate such mission critical workloads and DB's you might consider dedicated solutions and architectures:
+To migrate such mission critical workloads and RDBMS systems, you might consider dedicated solutions and architectures:
 
 - **Oracle Databases** – Use Oracle Data Guard or GoldenGate for robust replication, synchronization, and failover capabilities.
 - **PostgreSQL/MySQL** – Use native replication or database-specific migration tools.
