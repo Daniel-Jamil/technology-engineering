@@ -47,11 +47,6 @@ Decision Logic by Source Platform.
 
 - Other Public Clouds (Azure, GCP, etc.) → OCI Native Compute Instances: Cross-cloud workload migration into OCI Compute. RackWare provides automated discovery, replication, and deployment capabilities to support consolidation or cost optimization strategies.
 
-| Source Environment                     | Target Platform              | Migration Tooling                         | Migration Guide            |
-|----------------------------------------|------------------------------|-------------------------------------------|----------------------------|
-| AWS EC2 / VMs                          | OCI Native Compute Instances | Oracle Cloud Migrations (OCM) / RackWare  | [AWS to OCI Native](./files/aws-to-oci-native.md)         |
-| Other Public Clouds (Azure, GCP, etc.) | OCI Native Compute Instances | RackWare                                  | [Other Clouds to OCI Native](./files/other-clouds-to-oci-native.md)|
-
 **Public Cloud Instances Migration to OCI**
 
 This diagram outlines the migration path for workloads currently hosted on other major public cloud providers. The goal is to transition these workloads into Target OCI Native Instances.
@@ -61,6 +56,13 @@ This diagram outlines the migration path for workloads currently hosted on other
 ![Decision tree ](./files/images/Public_Cloud_to_OCI_Decision_tree.jpg)
 
 </p>
+
+
+| Source Environment                     | Target Platform              | Migration Tooling                         | Migration Guide            |
+|----------------------------------------|------------------------------|-------------------------------------------|----------------------------|
+| AWS EC2 / VMs                          | OCI Native Compute Instances | Oracle Cloud Migrations (OCM) / RackWare  | [AWS to OCI Native](./files/aws-to-oci-native.md)         |
+| Other Public Clouds (Azure, GCP, etc.) | OCI Native Compute Instances | RackWare                                  | [Other Clouds to OCI Native](./files/other-clouds-to-oci-native.md)|
+
 
 **OpenShift-Based Platform Migration**
 
