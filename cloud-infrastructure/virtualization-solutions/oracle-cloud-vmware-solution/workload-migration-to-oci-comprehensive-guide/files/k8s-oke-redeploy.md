@@ -2,7 +2,7 @@
 
 ## Overview
 
-This guide covers migrating containerized workloads from on-premises or self-managed Kubernetes environments to Oracle Kubernetes Engine (OKE) using a redeployment-based migration approach.Rather than attempting cluster-level state transfer, this approach focuses on rebuilding and redeploying applications on OKE using existing CI/CD pipelines, container registries, Helm charts, and GitOps workflows. This method aligns with Kubernetes best practices and provides a clean, cloud-native landing on OCI.
+This guide covers migrating containerized workloads from on-premises or self-managed Kubernetes environments to Oracle Kubernetes Engine (OKE) using a redeployment-based migration approach. Rather than attempting cluster-level state transfer, this approach focuses on rebuilding and redeploying applications on OKE using existing CI/CD pipelines, container registries, Helm charts, and GitOps workflows. This method aligns with Kubernetes best practices and provides a clean, cloud-native landing on OCI.
 
 ## Introduction
 
