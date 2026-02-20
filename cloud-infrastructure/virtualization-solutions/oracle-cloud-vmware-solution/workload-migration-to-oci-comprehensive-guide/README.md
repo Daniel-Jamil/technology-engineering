@@ -1,6 +1,6 @@
 # Infrastructure Migration to OCI: Scenarios & Strategic Guidelines
 
-This guide provides a comprehensive technical framework for migrating core datacenter infrastructure to Oracle Cloud Infrastructure (OCI). It covers VMware and non-VMware virtualization, physical x86 servers, cross-cloud replatforming, OpenShift-based platform standardization, and mixed VM–container convergence paths. It also details the tooling and architectural patterns required to execute large-scale enterprise migrations with minimal operational disruption.
+This guide provides a comprehensive technical framework for migrating enterprise infrastructure to Oracle Cloud Infrastructure (OCI). It covers VMware and non-VMware virtualization, physical x86 servers, cross-cloud replatforming, OpenShift-based platform standardization, and mixed VM–container convergence paths. It also details the tooling and architectural patterns required to execute large-scale enterprise migrations with minimal operational disruption.
 
 ## Migration Scenarios
 
