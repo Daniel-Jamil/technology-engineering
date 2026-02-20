@@ -21,7 +21,7 @@ Bare-metal workloads are migrated directly to OCI, either into OCI Compute or vi
 
 | Source Environment          | Target Platform                                  | Migration Tooling                             | Migration Guide                                  |
 |-----------------------------|--------------------------------------------------|-----------------------------------------------|--------------------------------------------------|
-| VMware vSphere              | Oracle Cloud VMware Solution (OCVS)              | VMware HCX                                    | [VMware vSphere to OCVS using HCX] (./files/vsphere-to-ocvs.md)                 |
+| VMware vSphere              | Oracle Cloud VMware Solution (OCVS)              | VMware HCX                                    | [VMware vSphere to OCVS using HCX](./files/vsphere-to-ocvs.md)                 |
 | VMware vSphere              | OCI Native Compute Instances                     | Oracle Cloud Migrations (OCM) / RackWare      | VMware vSphere to OCI Native                     |
 | Microsoft Hyper-V / KVM     | OCI Native Compute Instances                     | RackWare             | Hyper-V/KVM to OCI Native                        |
 | Microsoft Hyper-V / KVM     | Oracle Cloud VMware Solution (OCVS)              | HCX Enterprise (OSAM) / RackWare              | Hyper-V/KVM to OCVS                              |
