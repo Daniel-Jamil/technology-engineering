@@ -19,15 +19,6 @@ This guide outlines the principal migration paths for transitioning workloads fr
 - Physical x86 Servers → OCI Native Compute or OCVS
 Bare-metal workloads are migrated directly to OCI, either into OCI Compute or virtualized within OCVS. OS-level replication tools such as RackWare enable smooth transition for legacy and modernization-driven workloads.
 
-| Source Environment          | Target Platform                                  | Migration Tooling                             | Migration Guide                                  |
-|-----------------------------|--------------------------------------------------|-----------------------------------------------|--------------------------------------------------|
-| VMware vSphere              | Oracle Cloud VMware Solution (OCVS)              | VMware HCX                                    | VMware vSphere to OCVS using HCX                 |
-| VMware vSphere              | OCI Native Compute Instances                     | Oracle Cloud Migrations (OCM) / RackWare      | VMware vSphere to OCI Native                     |
-| Microsoft Hyper-V / KVM     | OCI Native Compute Instances                     | RackWare             | Hyper-V/KVM to OCI Native                        |
-| Microsoft Hyper-V / KVM     | Oracle Cloud VMware Solution (OCVS)              | HCX Enterprise (OSAM) / RackWare              | Hyper-V/KVM to OCVS                              |
-| Physical x86 Servers        | OCI Native Compute Instances / OCVS              | RackWare                                      | Physical x86 to OCI                              |
-
-
 **Workload Migration to OCI Decision tree**
 
 This diagram assists architects in choosing a migration strategy based on the Source Platform and the desired Target Environment (OCI Native vs. VMware Solution).
@@ -39,16 +30,22 @@ Decision Logic by Source Platform.
 
 </p>
 
+| Source Environment          | Target Platform                                  | Migration Tooling                             | Migration Guide                                  |
+|-----------------------------|--------------------------------------------------|-----------------------------------------------|--------------------------------------------------|
+| VMware vSphere              | Oracle Cloud VMware Solution (OCVS)              | VMware HCX                                    | [VMware vSphere to OCVS using HCX](./files/vmware-vsphere-to-ocvs-hcx.md)                 |
+| VMware vSphere              | OCI Native Compute Instances                     | Oracle Cloud Migrations (OCM) / RackWare      | [VMware vSphere to OCI Native](./files/vmware-vsphere-to-oci-native.md)                   |
+| Microsoft Hyper-V / KVM     | OCI Native Compute Instances                     | RackWare             | [Hyper-V/KVM to OCI Native](./files/hyper-v-kvm-to-oci-native.md)                        |
+| Microsoft Hyper-V / KVM     | Oracle Cloud VMware Solution (OCVS)              | HCX Enterprise (OSAM) / RackWare              | [Hyper-V/KVM to OCVS](./files/hyper-v-kvm-to-ocvs.md)                              |
+| Physical x86 Servers        | OCI Native Compute Instances / OCVS              | RackWare                                      | [Physical x86 to OCI](./files/physical-to-oci.md)|
+
+
+
+
 **Public Cloud to OCI**
 
 - AWS EC2 / VMs → OCI Native Compute Instances: Replatforming of AWS-based virtual machines into OCI Compute. Migration tooling such as Oracle Cloud Migrations (OCM) or RackWare enables replication, format conversion, and staged cutover to OCI-native infrastructure.
 
 - Other Public Clouds (Azure, GCP, etc.) → OCI Native Compute Instances: Cross-cloud workload migration into OCI Compute. RackWare provides automated discovery, replication, and deployment capabilities to support consolidation or cost optimization strategies.
-
-| Source Environment                     | Target Platform              | Migration Tooling                         | Migration Guide            |
-|----------------------------------------|------------------------------|-------------------------------------------|----------------------------|
-| AWS EC2 / VMs                          | OCI Native Compute Instances | Oracle Cloud Migrations (OCM) / RackWare  | AWS to OCI Native          |
-| Other Public Clouds (Azure, GCP, etc.) | OCI Native Compute Instances | RackWare                                  | Other Clouds to OCI Native |
 
 **Public Cloud Instances Migration to OCI**
 
@@ -60,6 +57,13 @@ This diagram outlines the migration path for workloads currently hosted on other
 
 </p>
 
+
+| Source Environment                     | Target Platform              | Migration Tooling                         | Migration Guide            |
+|----------------------------------------|------------------------------|-------------------------------------------|----------------------------|
+| AWS EC2 / VMs                          | OCI Native Compute Instances | Oracle Cloud Migrations (OCM) / RackWare  | [AWS to OCI Native](./files/aws-to-oci-native.md)         |
+| Other Public Clouds (Azure, GCP, etc.) | OCI Native Compute Instances | RackWare                                  | [Other Clouds to OCI Native](./files/other-clouds-to-oci-native.md)|
+
+
 **OpenShift-Based Platform Migration**
 
 - Kubernetes → OpenShift Container Platform on OCI: Intended for organizations in the process of standardizing on OpenShift. Applications are redeployed onto OpenShift on OCI under a Bring-Your-Own-Subscription (BYOS) model, enabling enterprise governance and Red Hat ecosystem alignment.
@@ -67,14 +71,9 @@ This diagram outlines the migration path for workloads currently hosted on other
 - OpenShift → OpenShift on OCI (MTC): High-fidelity OpenShift-to-OpenShift migration using Migration Toolkit for Containers (MTC). Preserves namespaces, OpenShift constructs, and supported persistent workloads while relocating the platform to OCI.
 
 - Mixed VM-based + Containerized Workloads → OpenShift Virtualization on OCI: A platform consolidation strategy unifying VMs and containers under OpenShift. Containers are redeployed (or migrated via MTC if already OpenShift), while VMs are migrated using Migration Toolkit for Virtualization (MTV), enabling operational convergence.
-
-| Source Environment                          | Target Platform                          | Migration Tooling                                 | Migration Guide                                           |
-|---------------------------------------------|------------------------------------------|---------------------------------------------------|-----------------------------------------------------------|
-| Kubernetes (on-prem or self-managed)        | OpenShift Container Platform on OCI      | Container Redeployment (CI/CD, Helm, GitOps)      | Kubernetes to OpenShift on OCI (Redeploy)                 |
-| Red Hat OpenShift (on-prem or self-managed) | OpenShift Container Platform on OCI      | Migration Toolkit for Containers (MTC)            | OpenShift to OpenShift on OCI using MTC                   |
-| Mixed VM-based + Containerized Workloads    | OpenShift Virtualization on OCI          | Containers: Redeploy or MTC<br>VMs: MTV           | Mixed VM + Container to OpenShift Virtualization          |
-
+  
 **OpenShift-Based Platform Migration**
+  
 This diagram focuses on the transition of containerized and hybrid workloads specifically into a Red Hat OpenShift on OCI environment.
 
 <p align = "center">
@@ -82,6 +81,15 @@ This diagram focuses on the transition of containerized and hybrid workloads spe
 ![Decision tree ](./files/images/Containers_to_OCI_Decision_tree.jpg)
 
 </p>
+
+
+| Source Environment                          | Target Platform                          | Migration Tooling                                 | Migration Guide                                           |
+|---------------------------------------------|------------------------------------------|---------------------------------------------------|-----------------------------------------------------------|
+| Kubernetes (on-prem or self-managed)        | OpenShift Container Platform on OCI      | Container Redeployment (CI/CD, Helm, GitOps)      | [Kubernetes to OpenShift on OCI (Redeploy)](./files/k8s-openshift-on-oci-redeploy.md)                 |
+| Red Hat OpenShift (on-prem or self-managed) | OpenShift Container Platform on OCI      | Migration Toolkit for Containers (MTC)            | [OpenShift to OpenShift on OCI using MTC](./files/openshift-openshif-on-oci-using-mtc.md)                   |
+| Mixed VM-based + Containerized Workloads    | OpenShift Virtualization on OCI          | Containers: Redeploy or MTC<br>VMs: MTV           | [Mixed VM + Container to OpenShift Virtualization](./files/mixed-workloads-openshift-virtualization-on-oci-using-mtv.md)
+
+
 
 # When to use this asset?
 
