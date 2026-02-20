@@ -329,7 +329,7 @@ Selecting the right migration tool depends on platform compatibility, workload c
 
 <p align = "center">
 
-![Decision tree ](./files/images/Workload_to_OCI_Decision_tree.jpg)
+![Decision tree ](./images/Workload_to_OCI_Decision_tree.jpg)
 
 
 
