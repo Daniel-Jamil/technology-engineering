@@ -135,7 +135,7 @@ While VM-level migration tools like RackWare can handle the majority of workload
 - Continuous write activity (transaction-heavy workloads).
 - The requirement for zero or near-zero downtime.
 
-TTo migrate such mission critical workloads and RDBMS environments you might consider dedicated solutions and architectures:
+To migrate such mission critical workloads and RDBMS environments you might consider dedicated solutions and architectures:
 
 - **Oracle Databases** – Use Oracle Data Guard or GoldenGate for robust replication, synchronization, and failover capabilities.
 - **PostgreSQL/MySQL** – Use native replication or database-specific migration tools.
