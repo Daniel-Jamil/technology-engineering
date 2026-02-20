@@ -77,7 +77,7 @@ A structured assessment, planning, and testing phase is essential for validating
 
 ### Physical-to-Virtual Conversion
 
-- **Hardware Abstraction:** Physical hardware components will replaced with virtual ones
+- **Hardware Abstraction:** Physical hardware components are replaced with virtual ones
 - **Boot Configuration:** BIOS/UEFI settings may need adjustment for virtual environments
 - **Storage Migration:** Physical disks are converted to virtual disk formats (VMDK for OCVS, OCI Block Volumes for Native)
 - **Network Configuration:** Physical NICs are replaced with virtual NICs
