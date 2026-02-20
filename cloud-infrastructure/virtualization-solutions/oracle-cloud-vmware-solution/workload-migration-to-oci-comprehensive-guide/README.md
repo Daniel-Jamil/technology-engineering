@@ -71,13 +71,7 @@ This diagram outlines the migration path for workloads currently hosted on other
 - OpenShift → OpenShift on OCI (MTC): High-fidelity OpenShift-to-OpenShift migration using Migration Toolkit for Containers (MTC). Preserves namespaces, OpenShift constructs, and supported persistent workloads while relocating the platform to OCI.
 
 - Mixed VM-based + Containerized Workloads → OpenShift Virtualization on OCI: A platform consolidation strategy unifying VMs and containers under OpenShift. Containers are redeployed (or migrated via MTC if already OpenShift), while VMs are migrated using Migration Toolkit for Virtualization (MTV), enabling operational convergence.
-
-| Source Environment                          | Target Platform                          | Migration Tooling                                 | Migration Guide                                           |
-|---------------------------------------------|------------------------------------------|---------------------------------------------------|-----------------------------------------------------------|
-| Kubernetes (on-prem or self-managed)        | OpenShift Container Platform on OCI      | Container Redeployment (CI/CD, Helm, GitOps)      | Kubernetes to OpenShift on OCI (Redeploy)                 |
-| Red Hat OpenShift (on-prem or self-managed) | OpenShift Container Platform on OCI      | Migration Toolkit for Containers (MTC)            | OpenShift to OpenShift on OCI using MTC                   |
-| Mixed VM-based + Containerized Workloads    | OpenShift Virtualization on OCI          | Containers: Redeploy or MTC<br>VMs: MTV           | Mixed VM + Container to OpenShift Virtualization          |
-
+- 
 **OpenShift-Based Platform Migration**
 This diagram focuses on the transition of containerized and hybrid workloads specifically into a Red Hat OpenShift on OCI environment.
 
@@ -86,6 +80,15 @@ This diagram focuses on the transition of containerized and hybrid workloads spe
 ![Decision tree ](./files/images/Containers_to_OCI_Decision_tree.jpg)
 
 </p>
+
+
+| Source Environment                          | Target Platform                          | Migration Tooling                                 | Migration Guide                                           |
+|---------------------------------------------|------------------------------------------|---------------------------------------------------|-----------------------------------------------------------|
+| Kubernetes (on-prem or self-managed)        | OpenShift Container Platform on OCI      | Container Redeployment (CI/CD, Helm, GitOps)      | [Kubernetes to OpenShift on OCI (Redeploy)](./files/k8s-openshift-on-oci-redeploy.md)                 |
+| Red Hat OpenShift (on-prem or self-managed) | OpenShift Container Platform on OCI      | Migration Toolkit for Containers (MTC)            | [OpenShift to OpenShift on OCI using MTC](./files/openshift-openshift-on-oci-useing-mts.md)                   |
+| Mixed VM-based + Containerized Workloads    | OpenShift Virtualization on OCI          | Containers: Redeploy or MTC<br>VMs: MTV           | [Mixed VM + Container to OpenShift Virtualization](./files/mixed-workloads-openshift-virtualization-on-oci-using-mtv.md)
+|
+
 
 # When to use this asset?
 
