@@ -19,15 +19,6 @@ This guide outlines the principal migration paths for transitioning workloads fr
 - Physical x86 Servers → OCI Native Compute or OCVS
 Bare-metal workloads are migrated directly to OCI, either into OCI Compute or virtualized within OCVS. OS-level replication tools such as RackWare enable smooth transition for legacy and modernization-driven workloads.
 
-| Source Environment          | Target Platform                                  | Migration Tooling                             | Migration Guide                                  |
-|-----------------------------|--------------------------------------------------|-----------------------------------------------|--------------------------------------------------|
-| VMware vSphere              | Oracle Cloud VMware Solution (OCVS)              | VMware HCX                                    | [VMware vSphere to OCVS using HCX](./files/vmware-vsphere-to-ocvs-hcx.md)                 |
-| VMware vSphere              | OCI Native Compute Instances                     | Oracle Cloud Migrations (OCM) / RackWare      | [VMware vSphere to OCI Native](./files/vmware-vsphere-to-oci-native.md)                   |
-| Microsoft Hyper-V / KVM     | OCI Native Compute Instances                     | RackWare             | [Hyper-V/KVM to OCI Native](./files/hyper-v-kvm-to-oci-native.md)                        |
-| Microsoft Hyper-V / KVM     | Oracle Cloud VMware Solution (OCVS)              | HCX Enterprise (OSAM) / RackWare              | [Hyper-V/KVM to OCVS](./files/hyper-v-kvm-to-ocvs.md)                              |
-| Physical x86 Servers        | OCI Native Compute Instances / OCVS              | RackWare                                      | [Physical x86 to OCI](./files/physical-to-oci.md)                             |
-
-
 **Workload Migration to OCI Decision tree**
 
 This diagram assists architects in choosing a migration strategy based on the Source Platform and the desired Target Environment (OCI Native vs. VMware Solution).
@@ -38,6 +29,17 @@ Decision Logic by Source Platform.
 ![Decision tree ](./files/images/Workload_to_OCI_Decision_tree.jpg)
 
 </p>
+
+| Source Environment          | Target Platform                                  | Migration Tooling                             | Migration Guide                                  |
+|-----------------------------|--------------------------------------------------|-----------------------------------------------|--------------------------------------------------|
+| VMware vSphere              | Oracle Cloud VMware Solution (OCVS)              | VMware HCX                                    | [VMware vSphere to OCVS using HCX](./files/vmware-vsphere-to-ocvs-hcx.md)                 |
+| VMware vSphere              | OCI Native Compute Instances                     | Oracle Cloud Migrations (OCM) / RackWare      | [VMware vSphere to OCI Native](./files/vmware-vsphere-to-oci-native.md)                   |
+| Microsoft Hyper-V / KVM     | OCI Native Compute Instances                     | RackWare             | [Hyper-V/KVM to OCI Native](./files/hyper-v-kvm-to-oci-native.md)                        |
+| Microsoft Hyper-V / KVM     | Oracle Cloud VMware Solution (OCVS)              | HCX Enterprise (OSAM) / RackWare              | [Hyper-V/KVM to OCVS](./files/hyper-v-kvm-to-ocvs.md)                              |
+| Physical x86 Servers        | OCI Native Compute Instances / OCVS              | RackWare                                      | [Physical x86 to OCI](./files/physical-to-oci.md)                             |
+
+
+
 
 **Public Cloud to OCI**
 
